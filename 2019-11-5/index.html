@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Presentation</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -26,22 +26,26 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown="slides.md"
-					 data-separator="^\n---- ----\n">
+					 data-transition="slide"
+					 data-separator="^\n---- ----\n$">
 				</section>
 			</div>
 		</div>
-
+		
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				transition: 'slide',
+				center: true,
+				progress: true,
+				hash: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js', condition: function() {return !!document.querySelector('[data-markdown]');} },
 					{ src: 'plugin/markdown/markdown.js', condition: function() {return !!document.querySelector('[data-markdown]');} },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
 			});

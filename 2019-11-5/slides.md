@@ -43,8 +43,8 @@
 
 ---- ----
 
-# Design
-![Image](./img/site.jpg)
+### Design
+![](./img/site.jpg)
 
 ---- ----
 
